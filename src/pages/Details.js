@@ -29,13 +29,13 @@ const Details = () => {
         <Bag className={styles.detailsNavIcon} onClick={handleCheckout} />
       </div>
       <div className={styles.detailsWrapper}>
-        <p>{product?.id}</p>
-        <p>{product?.title}</p>
-        <p>{product?.description}</p>
-        <p>{product?.category}</p>
-        <p>{product?.price}</p>
-        <p>{product?.rating?.rate}</p>
-        <p>{product?.rating?.count}</p>
+        {/* <p>{product?.id}</p> */}
+        <p>Title: {product?.title}</p>
+        <p>Description: {product?.description}</p>
+        <p>Category: {product?.category}</p>
+        <p>Price: {product?.price}</p>
+        <p>Rating:{product?.rating?.rate}/5</p>
+        <p> {product?.rating?.count} Rating</p>
         <img className={styles.detailsImage} src={product?.image} />
       </div>
     </div>
